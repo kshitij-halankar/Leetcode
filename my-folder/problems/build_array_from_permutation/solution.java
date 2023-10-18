@@ -1,11 +1,10 @@
 class Solution {
     public int[] buildArray(int[] nums) {
-        int i = 0;
-        int l = nums.length;
-        int[] b = new int[l];
-        for (i = 0; i < l; i++) {
-            b[i] = nums[nums[i]];
+        int i=0, n=nums.length;
+        int[] ans = new int[n];
+        for(i=0;i<n;i++){
+            ans[i] = nums[nums[i]];
         }
-        return b;
+        return ans;
     }
 }
